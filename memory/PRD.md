@@ -1,90 +1,80 @@
-# InteriorAR - Landing Page Redesign
+# InteriorAR - Landing Page Redesign V2
 
 ## Original Problem Statement
-"Mejorame esta web sin cambiar los textos" - User wanted to improve the design of their InteriorAR newsletter landing page while keeping all the original text content intact.
+"Mejorame esta web sin cambiar los textos" - Luego: "necesito algo mas rompedor, raro y que atrape" usando las imágenes reales de GLITCH.
 
 ## User Persona
 - Newsletter creator focused on neuroscience and behavioral psychology
-- Target audience: Spanish-speaking individuals interested in understanding how digital platforms manipulate behavior
-- The mascot is GLITCH, a cat character who "doesn't care about you" but tells hard truths
+- Target audience: Spanish-speaking individuals interested in understanding digital manipulation
+- GLITCH: Gato negro con ojos naranjas brillantes y efecto glitch desintegración (cyan/magenta/amarillo)
 
 ## Core Requirements (Static)
-- ✅ Maintain all original text content
-- ✅ Keep the GLITCH cat mascot concept
-- ✅ Newsletter subscription functionality
-- ✅ Modern, premium design
+- ✅ Mantener todos los textos originales
+- ✅ Usar las imágenes reales de GLITCH proporcionadas
+- ✅ Diseño "rompedor, raro y que atrape"
+- ✅ Estética experimental/glitch
 - ✅ Mobile responsive
 
 ## Architecture
-- **Frontend**: React with Framer Motion for animations
-- **Styling**: Custom CSS with CSS Variables
-- **Typography**: Instrument Serif (Google Fonts via @fontsource)
-- **Images**: Unsplash for cat images
-- **Form**: Mocked subscription (ready for Acumbamail integration)
+- **Frontend**: React 18 + Framer Motion
+- **Styling**: Custom CSS with CSS Variables + @fontsource
+- **Typography**: Bebas Neue (títulos), Space Mono (cuerpo)
+- **Images**: Assets del usuario (GLITCH_BACK, GLITCH_FRONT)
 
 ## What's Been Implemented (January 2026)
 
-### Design System
-- Dark theme with orange (#f97316) accents
-- Editorial/premium aesthetic
-- Instrument Serif for headlines, SF Mono for body
-- CSS variables for theming
-- Noise overlay and scanline effects
+### Design System V2
+- Tema oscuro brutal (#000000 base)
+- Accent naranja intenso (#ff6b00) con glow effects
+- Colores glitch: cyan, magenta, amarillo
+- Efectos: noise overlay, scanlines, cursor personalizado
 
 ### Components
-1. **Navigation** - Fixed, with scroll effect, glowing logo
-2. **Ticker** - Animated horizontal scroll with key messages
-3. **Hero Section** - Large typography, callout box, email form
-4. **Origin Section** - GLITCH introduction + mechanism explanation
-5. **Territories Section** - Topics table with neurotransmitter tags
-6. **Why Different Section** - 3 cards explaining the approach
-7. **CTA Section** - Centered call to action
-8. **Final Section** - Highlighted form with cat image
-9. **Cookie Banner** - Animated, with accept/configure options
-10. **Footer** - Simple with links
+1. **Navigation** - Logo glitcheante, links estilo terminal [BRACKETS]
+2. **Hero** - Título gigante Bebas Neue, GLITCH flotante, formulario
+3. **Origin** - GLITCH frontal, mecanismo en 4 pasos
+4. **Territories** - Grid de 6 cards con neurotransmisores
+5. **Why Different** - 3 cards con quotes
+6. **CTA** - Centrado con frases destacadas
+7. **Final** - GLITCH grande + formulario
+8. **Cookie Banner** - Estilo glitch con emoji
 
-### Features
-- Smooth scroll animations (intersection observer)
-- Glitch effects on hover (cat images, text)
-- Float animation on cat images
-- Parallax on hero image
-- Form submission states
-
-## What's NOT Implemented (Backlog)
-
-### P0 - Ready for Production
-- [ ] Connect form to Acumbamail API
-- [ ] Add actual privacy policy page
-- [ ] Add Google Analytics/tracking
-
-### P1 - Nice to Have
-- [ ] Add more micro-interactions
-- [ ] Implement dark/light theme toggle
-- [ ] Add loading animation
-- [ ] Optimize images (WebP format)
-
-### P2 - Future
-- [ ] Blog/archive section
-- [ ] Social sharing functionality
-- [ ] Multi-language support
+### Visual Effects
+- Scramble text animation on scroll
+- GlitchyText component (random char replacement)
+- Cursor follower con GLITCH miniatura
+- Floating animation en imágenes
+- Matrix rain en background hero
 
 ## Test Status
-- Frontend: 100% passed (15/15 tests)
-- All UI components functional
-- Forms working (mocked)
-- Animations smooth
-- Responsive design verified
+- Frontend: 95% passed
+- Bugs menores: checkbox styling (workaround exists)
+- Todas las secciones funcionales
+- Formularios mocked correctamente
 
-## Files Structure
+## Backlog
+
+### P0 - Production Ready
+- [ ] Conectar formulario con Acumbamail
+- [ ] Crear páginas de privacidad/legal
+- [ ] Add analytics
+
+### P1 - Enhancements
+- [ ] Más efectos de glitch en hover
+- [ ] Audio effects (opcional)
+- [ ] Loading screen con GLITCH
+
+### P2 - Future
+- [ ] Dark/light toggle
+- [ ] Multi-language
+
+## Files
 ```
 /app/frontend/src/
-├── App.js          # Main component with all sections
-├── App.css         # Complete styling
-└── index.css       # Global styles
+├── App.js          # Componentes principales
+├── App.css         # Estilos glitch
 ```
 
-## Next Tasks
-1. Integrate with Acumbamail for real form submission
-2. Create privacy/legal pages
-3. Add analytics tracking
-4. SEO optimization
+## Assets
+- GLITCH_BACK: https://customer-assets.emergentagent.com/job_design-boost-59/artifacts/drhyyz5i_De_espalda.png
+- GLITCH_FRONT: https://customer-assets.emergentagent.com/job_design-boost-59/artifacts/vp4zid1l_descarga.png
